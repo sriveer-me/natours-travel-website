@@ -3,3 +3,17 @@ section.about{
     background-color: $color-light-gray-1;
     margin: -20vh 0;
 }
+
+section.features{
+    padding: 20rem 0;
+    background-image: linear-gradient(to bottom right, rgba($color-primary-light,0.8), rgba($color-primary-dark,0.8)),
+                      url('../img/nat-4.jpg');
+    background-size: cover;
+    background-position: center top;
+
+    transform: skewY(-7deg);
+
+    & > * {
+      transform: skewY(7deg);  
+    }
+}
