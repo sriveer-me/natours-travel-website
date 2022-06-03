@@ -104,6 +104,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-huge {
+  margin-bottom: 10rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .u-background-gradient-primary-bottom-right {
   background-image: linear-gradient(to bottom right, #7ed56f, #28b485); }
 
@@ -130,7 +136,7 @@ section.features {
 section.popular-trips {
   padding: 25rem 0;
   background-color: #f7f7f7;
-  margin: -10rem 0 50rem 0; }
+  margin: -10rem 0 15rem 0; }
 
 .btn:link, .btn:visited {
   position: relative;
@@ -157,6 +163,12 @@ section.popular-trips {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
 
 .btn::after {
   transition: all 0.4s;
@@ -242,6 +254,7 @@ section.popular-trips {
 .card {
   position: relative;
   height: 52rem;
+  border-radius: 3px;
   perspective: 150rem;
   -moz-perspective: 150rem; }
   .card__side {
@@ -253,7 +266,7 @@ section.popular-trips {
     left: 0;
     backface-visibility: hidden; }
     .card__side--front {
-      background-color: white;
+      background-color: #fff;
       transform: rotateY(0deg); }
     .card__side--back {
       transform: rotateY(180deg); }
@@ -265,7 +278,8 @@ section.popular-trips {
     height: 23rem;
     background-size: cover;
     background-blend-mode: screen;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); }
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    border-radius: 3px; }
     .card__picture--nat5 {
       background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
     .card__picture--nat6 {
