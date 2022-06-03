@@ -69,6 +69,12 @@
             &--nat5{
                 background-image: linear-gradient(to bottom right,rgba($color-secondary-light,0.85),rgba($color-secondary-dark,0.85));
             }
+            &--nat6{
+                background-image: linear-gradient(to bottom right,rgba($color-primary-light,0.85),rgba($color-primary-dark,0.85));
+            }
+            &--nat7{
+                background-image: linear-gradient(to bottom right,rgba($color-tertiary-light,0.85),rgba($color-tertiary-dark,0.85));
+            }
         }
     }
 
