@@ -1,6 +1,6 @@
 .card{
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -8,12 +8,10 @@
     &__side{
         transition: all .8s;
         position: absolute;
-        height: 50rem;
+        height: 52rem;
         width: 100%;
         top: 0;
         left: 0;
-
-        font-size: 3rem;
 
         backface-visibility: hidden;
 
@@ -32,5 +30,65 @@
     }
     &:hover &__side--back{
         transform: rotateY(360deg);
+    }
+
+    //STYLING
+    &__picture{
+        height: 23rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+        
+        &--nat5{
+            background-image: linear-gradient(to bottom right,$color-secondary-light,$color-secondary-dark), url('../img/nat-5.jpg');
+        }
+
+        &--nat6{
+            background-image: linear-gradient(to bottom right,$color-primary-light,$color-primary-dark), url('../img/nat-6.jpg');
+        }
+
+        &--nat7{
+            background-image: linear-gradient(to bottom right,$color-tertiary-light,$color-tertiary-dark), url('../img/nat-7.jpg');
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        color: $color-white;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        position: absolute;
+        top: 12rem;
+        right: 3rem;
+        width: 75%;
+        
+        &-span{
+            padding: 1rem 1.5rem;
+            box-decoration-break: clone;
+            &--nat5{
+                background-image: linear-gradient(to bottom right,rgba($color-secondary-light,0.85),rgba($color-secondary-dark,0.85));
+            }
+        }
+    }
+
+    &__list{
+        padding: 3rem;
+
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-light-gray-2;
+                }
+            }
+        }
     }
 }
