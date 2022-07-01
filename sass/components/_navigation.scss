@@ -27,8 +27,6 @@
         text-align: center;
 
         z-index: 1500;
-
-        transform: translateX(-100%);
     }
 
     &__list{
@@ -43,6 +41,8 @@
         width: 0%;
         opacity: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        overflow: hidden;
     }
 
     &__item{
@@ -100,10 +100,6 @@
         width: 100%;
         opacity: 1;
         display: block;
-    }
-
-    &__input:checked ~ &__nav{
-        transform: translateX(0%);
     }
 
     &__hamburger {
